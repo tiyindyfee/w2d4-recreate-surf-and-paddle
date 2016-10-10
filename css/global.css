@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-image: linear-gradient(rgba(23, 116, 185, 0.62), rgba(23, 116, 185, 0.62)), url(http://unsplash.it/1200?random);
+  background-size: cover;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  color: white;
+}
+
+header #navRow {
+  font-size: 18px;
+  color: #0c3b5e;
+}
+
+header img {
+  margin-right: 10px;
+}
+
+header a {
+  color: #0c3b5e;
+}
+
+main .button {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+main .button, main .button-icon, main .button-text {
+  display: inline-block;
+  float: left;
+}
+
+main .button-icon, main .button-text {
+  padding: 5px 8px;
+}
+
+main .button-icon {
+  background-color: #083452;
+  color: white;
+}
+
+main .button-text {
+  background-color: #A3B3BF;
+  color: white;
+}
+
+main .button-blue .button-icon, main .button:hover .button-icon {
+  background-color: #0c3b5e;
+}
+
+main .button-blue .button-text, main .button:hover .button-text {
+  background-color: #1774B9;
+}
+
+footer #footerImages {
+  display: flex;
+}
+
+footer #footerImages > div {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  height: 25vw;
+  color: #0c3b5e;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+footer #footerImages > div:hover h3 {
+  color: white;
+}
+
+footer #footerImages > div:nth-child(1) {
+  background-image: linear-gradient(rgba(23, 116, 185, 0.62), rgba(23, 116, 185, 0.62)), url(http://unsplash.it/500?image=1);
+}
+
+footer #footerImages > div:nth-child(1):hover {
+  background-image: url(http://unsplash.it/500?image=1);
+}
+
+footer #footerImages > div:nth-child(2) {
+  background-image: linear-gradient(rgba(23, 116, 185, 0.62), rgba(23, 116, 185, 0.62)), url(http://unsplash.it/500?image=2);
+}
+
+footer #footerImages > div:nth-child(2):hover {
+  background-image: url(http://unsplash.it/500?image=2);
+}
+
+footer #footerImages > div:nth-child(3) {
+  background-image: linear-gradient(rgba(23, 116, 185, 0.62), rgba(23, 116, 185, 0.62)), url(http://unsplash.it/500?image=3);
+}
+
+footer #footerImages > div:nth-child(3):hover {
+  background-image: url(http://unsplash.it/500?image=3);
+}
+
+footer #footerImages > div:nth-child(4) {
+  background-image: linear-gradient(rgba(23, 116, 185, 0.62), rgba(23, 116, 185, 0.62)), url(http://unsplash.it/500?image=4);
+}
+
+footer #footerImages > div:nth-child(4):hover {
+  background-image: url(http://unsplash.it/500?image=4);
+}
+
+footer #footerNav {
+  background-color: #083452;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #b3b3b3;
+}
+
+footer #footerNav a {
+  color: #b3b3b3;
+}

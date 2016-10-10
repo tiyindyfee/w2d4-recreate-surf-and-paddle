@@ -1,0 +1,131 @@
+$translucentBlue: rgba(23, 116, 185, 0.62);
+$blue: #1774B9;
+$darkBlue: darken($blue, 20%);
+$white: white;
+$darkGrayBlue: #083452;
+$lightGray: #A3B3BF;
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-image: linear-gradient($translucentBlue, $translucentBlue), url(http://unsplash.it/1200?random);
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    color: $white;
+
+    #navRow {
+        font-size: 18px;
+        color: $darkBlue;
+    }
+
+    img {
+        margin-right: 10px;
+    }
+
+    a {
+        color: $darkBlue;
+    }
+}
+
+main {
+    .button {
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    .button, .button-icon, .button-text {
+        display: inline-block;
+        float: left;
+    }
+
+    .button-icon, .button-text {
+        padding: 5px 8px;
+    }
+
+    .button-icon {
+        background-color: $darkGrayBlue;
+        color: $white;
+    }
+
+    .button-text {
+        background-color: $lightGray;
+        color: $white;
+    }
+
+    .button-blue, .button:hover {
+        .button-icon {
+            background-color: darken($blue, 20%);
+        }
+        .button-text {
+            background-color: $blue;
+        }
+    }
+}
+
+footer {
+    #footerImages {
+        display: flex;
+
+        &>div {
+            flex: 1;
+            display: flex;
+            align-items: flex-end;
+            height: 25vw;
+            color: $darkBlue;
+            padding: 10px;
+            text-transform: uppercase;
+
+            &:hover {
+                h3 {
+                    color: $white;
+                }
+            }
+        }
+
+        &>div:nth-child(1) {
+            background-image: linear-gradient($translucentBlue, $translucentBlue), url(http://unsplash.it/500?image=1);
+
+            &:hover {
+                background-image: url(http://unsplash.it/500?image=1);
+            }
+        }
+
+        &>div:nth-child(2) {
+            background-image: linear-gradient($translucentBlue, $translucentBlue), url(http://unsplash.it/500?image=2);
+
+            &:hover {
+                background-image: url(http://unsplash.it/500?image=2);
+            }
+        }
+
+        &>div:nth-child(3) {
+            background-image: linear-gradient($translucentBlue, $translucentBlue), url(http://unsplash.it/500?image=3);
+
+            &:hover {
+                background-image: url(http://unsplash.it/500?image=3);
+            }
+        }
+
+        &>div:nth-child(4) {
+            background-image: linear-gradient($translucentBlue, $translucentBlue), url(http://unsplash.it/500?image=4);
+
+            &:hover {
+                background-image: url(http://unsplash.it/500?image=4);
+            }
+        }
+    }
+
+    #footerNav {
+        background-color: $darkGrayBlue;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: darken($white, 30%);
+
+        a {
+            color: darken($white, 30%);
+        }
+    }
+}
